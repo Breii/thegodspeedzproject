@@ -1,0 +1,25 @@
+int ledPin = 12;   //LED pin
+int buzzer = 13;  //buzzer
+int sensor = 2;  //sensor pin
+int val = 0;    //variable that stores sensor status
+
+void setup() {
+  pinMode(ledPin, OUTPUT);    //assigning LED as an output
+  pinMode(buzzer, OUTPUT);    //assigning buzzer as an output
+  pinMode(sensor, INPUT);   //assigning sensor as input
+
+}
+
+void loop() {
+   val = digitalRead(sensor);    
+   if (val == HIGH) //if sensor is high,
+   {          
+     digitalWrite(ledPin, HIGH); //the LED will turn on
+     tone(buzzer, 500, 500);
+     delay(500);  }         
+
+   else {
+     digitalWrite(ledPin, LOW);   //LED turns off
+     digitalWrite(buzzer, LOW);   //buzzer turns off
+   }
+ }
