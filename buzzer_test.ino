@@ -38,12 +38,3 @@ void loop() {
     digitalWrite(ledPin, LOW);
   }
 }
-
-
-//  buttonState = digitalRead(buttonPin);
-//  if (buttonState == HIGH) {
-//    digitalWrite(ledPin, HIGH);
-//  } else {
-//    digitalWrite(ledPin, LOW);
-//  }
-//}
