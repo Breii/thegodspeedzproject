@@ -18,6 +18,7 @@ int noteDurations[] = {4, 8, 8, 4, 4, 4, 4, 4};
 void setup() {
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
